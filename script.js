@@ -1,14 +1,18 @@
 let quadrados = document.querySelectorAll("div");
-i = 0;
-
+let i = 0;
+console.log(quadrados);
 function jogar(){
-    if(this.innerHTML = " "){
-        if(i%2==0){
+    if(this.innerHTML == ""){
+        if(i % 2 == 0){
             this.innerHTML = "X"
             i++;
-        }else{
+            verificarJogada()
+            
+        }
+        else{
             this.innerHTML = "O"
             i++;
+            verificarJogada()
         }
     }
 }
@@ -16,6 +20,63 @@ function jogar(){
 for(quadrado of quadrados){
     quadrado.onclick = jogar;
 }
+
+function verificarJogada(){
+    if(quadrados[0].innerHTML !=="" && quadrados[0].innerHTML === quadrados[1].innerHTML === quadrados[2].innerHTML){
+    
+        alert("voce venceu")
+    }
+    
+    else if(quadrados[3].innerHTML !=="" && quadrados[3].innerHTML === quadrados[4].innerHTML === quadrados[5].innerHTML){
+        
+        alert("voce venceu")
+        
+        
+    }
+    
+    else if(quadrados[6].innerHTML !=="" && quadrados[6].innerHTML === quadrados[7].innerHTML === quadrados[8].innerHTML){
+        
+        alert("voce venceu")
+    }
+    
+    else if(quadrados[0].innerHTML !=="" && quadrados[0].innerHTML === quadrados[4].innerHTML === quadrados[8].innerHTML){
+    
+    alert("voce venceu")
+    }
+    
+    else if(quadrados[0].innerHTML !=="" && quadrados[0].innerHTML === quadrados[3].innerHTML === quadrados[6].innerHTML){
+    
+    alert("voce venceu")
+
+    }
+    
+    else if(quadrados[1].innerHTML !=="" && quadrados[1].innerHTML === quadrados[4].innerHTML === quadrados[7].innerHTML){
+    
+    alert("voce venceu")
+
+    }
+    
+    else if(quadrados[2].innerHTML !=="" && quadrados[2].innerHTML === quadrados[5].innerHTML === quadrados[8].innerHTML){
+    
+    alert("voce venceu")
+    
+    }
+
+    else if(quadrados[2].innerHTML !=="" && quadrados[2].innerHTML === quadrados[4].innerHTML === quadrados[6].innerHTML){
+    
+    alert("voce venceu")
+    
+    }
+    
+    else{
+        
+        return;
+    }
+    
+    
+}
+
+
 
 
 
@@ -56,15 +117,15 @@ for(quadrado of quadrados){
 
 
 // for (quadrado of quadrados){
-    
-   
+
+
 // }
-        
+
 // if (jogador1 = "X" || jogador1 == "O"){
-        
+
 // }
 // else if (jogador2 = "O" || jogador2 =="X") {
-    
+
 // }
 // else{
 // alert("Erro!")
