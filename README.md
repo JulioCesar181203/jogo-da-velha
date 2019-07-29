@@ -1,6 +1,6 @@
-#Jogo da Velha
+#Jogo da Velha#
 
-##Regras do Jogo
+##Regras do Jogo##
 
 - É  permitido apenas 2 participantes por partida.
 - Cada participante terá uma figura ( X ou O).
@@ -9,7 +9,7 @@
 - O objetivo do jogo é formar uma linha, coluna e diagonal de 3 casas.
 - Após ter formado as 3 casas, o jogador vencerá.
 
-###Participantes
+###Participantes###
 
 - Julio Cesar
 - Matheus S. Antonio
